@@ -27,7 +27,14 @@ public class Manager {
         return objectMapper.writeValueAsString(listOfShops);
     }
 
+    @RequestMapping(value = "/getBestLocation",method = RequestMethod.GET)
+    public static  String getBestLocation() throws JsonProcessingException {
+
+        BestLocation bestLocation = new BestLocation(45.45,454.34,43);
+        ObjectMapper objectMapper = new ObjectMapper();
+        return objectMapper.writeValueAsString(bestLocation);
+    }
+
 
 
 }
-gi
