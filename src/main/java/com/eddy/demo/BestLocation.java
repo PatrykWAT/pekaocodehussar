@@ -1,17 +1,17 @@
 package com.eddy.demo;
 
 public class BestLocation {
-    float longtitude;
-    float langtitude;
+    double longtitude;
+    double langtitude;
     int percent;
 
     public BestLocation(double longtitude, double langtitude, int percent) {
-        this.longtitude = longtitude;
-        this.langtitude = langtitude;
+        this.longtitude =  longtitude;
+        this.langtitude =  langtitude;
         this.percent = percent;
     }
 
-    public float getLongtitude() {
+    public double  getLongtitude() {
         return longtitude;
     }
 
@@ -19,7 +19,7 @@ public class BestLocation {
         this.longtitude = longtitude;
     }
 
-    public float getLangtitude() {
+    public double  getLangtitude() {
         return langtitude;
     }
 

@@ -5,10 +5,10 @@ import java.io.Serializable;
 public class Shop implements Serializable {
 
     String shopName;
-    float Lattitude;
-    float Longtitude;
+    double Lattitude;
+    double Longtitude;
 
-    public Shop(String shopName, float lattitude, float longtitude) {
+    public Shop(String shopName, double lattitude, double longtitude) {
         this.shopName = shopName;
         Lattitude = lattitude;
         Longtitude = longtitude;
@@ -22,7 +22,7 @@ public class Shop implements Serializable {
         this.shopName = shopName;
     }
 
-    public float getLattitude() {
+    public double  getLattitude() {
         return Lattitude;
     }
 
@@ -30,7 +30,7 @@ public class Shop implements Serializable {
         Lattitude = lattitude;
     }
 
-    public float getLongtitude() {
+    public double  getLongtitude() {
         return Longtitude;
     }
 
